@@ -7,7 +7,7 @@ export default function StudentForm({ initialData = null, onSave, onCancel }) {
     useEffect(() => {
         if (initialData) setStudent(initialData);
         else setStudent(empty);
-    }, [initialData]);
+    }, [initialData, empty]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
