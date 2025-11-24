@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Layout for student manager */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.controls {
+  margin-bottom: 12px;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.students-table th,
+.students-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.students-table th {
+  background: #f4f4f4;
+}
+
+.student-form {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 16px;
+  background: #fff;
+}
+
+.student-form .row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.student-form label {
+  width: 90px;
+}
+
+.student-form input {
+  flex: 1;
+  padding: 6px 8px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  margin-right: 6px;
+}
